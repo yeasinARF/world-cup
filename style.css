@@ -1,0 +1,468 @@
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*...... universal style ...... */
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+/* ...........................
+index file style...................................  */
+
+/*.......... commcon style.......  */
+body{
+    font-family: 'Poppins', sans-serif;
+    width:1240px;
+    margin:0 auto;   
+   
+}
+a{
+    text-decoration:none;
+}
+/*....... header section style....... */
+.header-section{
+   margin-top:35px;
+   background-color: rgba(22, 22, 22, 1);
+   padding-left:60px;
+   padding-right:60px;
+   margin-bottom:35px;
+   margin-left:90px;   
+   margin-right:90px;
+   border-radius:25px; 
+   overflow:hidden;  
+}
+/* header content style  */
+.header-content{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-column-gap:23.46px;
+}
+.header-details .title{
+    font-weight:700px;
+    font-size:3rem;
+    color: rgba(255, 255, 255, 1);
+    padding-top:65px;
+}
+.header-details .mini-text{
+    padding-top:20px;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 1);
+}
+.header-details .btn{
+    position: relative;
+    margin-top:30px;
+    width: 187px;
+    height: 56px;
+    background-color: rgb(111, 0, 221);
+    border-radius: 5px;
+    margin-bottom:65px;
+    text-align:center;
+}
+.header-details .btn a{
+    color: #FFFFFF;
+}
+.header-details .btn a span{
+    font-size:1.25rem;
+    padding-right:10px;
+}
+/* animation on button  */
+.header-details .btn:hover{
+    animation: toBottom 5s 1 ease-out;
+}
+@keyframes toBottom {
+    from {top: 0px;}
+    to {top: 50px;}
+}
+
+/* header image style  */
+.header-img img{
+    padding-top:33px;
+    width:500px;
+    height:460px;
+    margin-bottom:-7px;
+}
+
+/* .....main content style......  */
+.main-content{
+    margin-top:85px;
+    margin-bottom:85px;
+    margin-left:90px;   
+    margin-right:90px;
+    
+
+}
+.main-content .button-section-view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+}
+.button-section-view .btn-view{
+    width: 131px;
+    height: 47px;
+    margin-top:60px;
+    background:rgb(111, 0, 221) ;
+    border-radius: 5px;
+    border:none;
+    display:none;
+}
+.button-section-view .btn-view a{
+    color:#FFFFFF;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.content-details{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* button section style  */
+.button-section{
+    width: 312px;
+    height: 312px;
+    background-color: #161616;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    margin-right:24px;
+    padding-left:20px;
+    padding-right:20px;
+}
+.button-section .btn .upcoming-match,.all-group,.blog{
+    margin-top:30px;
+    width: 252px;
+    height: 64px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+
+}
+.button-section .btn a{
+    color:rgba(22, 22, 22, 1);
+    font-weight: 500;
+    font-size: 1.2rem; 
+}
+.button-section .btn.btn-color{
+    margin-bottom:30px;
+}
+.button-section .btn .blog{
+    background-color:rgb(111, 0, 221);
+}
+.button-section .btn .blog a{
+    color:#FFFFFF;
+
+}
+/* article section style  */
+.article-section{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-column-gap:24px;
+}
+.article-section .article-1,.article-2,.article-3,.article-4,.article-5,.article-6,.article-7,.article-8,.article-9{
+    border-radius: 10px;
+    border:1px solid gainsboro;
+    margin-bottom:20px;
+}
+.article-section .article-1 .image img,.article-2 .image img,.article-3 .image img,.article-4 .image img,.article-5 .image img,.article-6 .image img,.article-7 .image img,.article-8 .image img,.article-9 .image img{
+    width: 232px;
+    height: 130px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+.article-section .article-1 .details,.article-2 .details,.article-3 .details,.article-4 .details,.article-5 .details,.article-6 .details,.article-7 .details,.article-8 .details,.article-9 .details{
+    padding-left:20px;
+    padding-right:20px;
+}
+.article-section .article-1 .details .btn,.article-2 .details .btn,.article-3 .details .btn,.article-4 .details .btn,.article-5 .details .btn,.article-6 .details .btn,.article-7 .details .btn,.article-8 .details .btn,.article-9 .details .btn{
+    margin-top:15px;
+    margin-bottom:15px;
+    width: 100px;
+    height: 32px;
+    border: 1px solid #161616;
+    border-radius: 5px;
+    font-size:0.8rem;
+}
+.article-section .article-1 .details .text,.article-2 .details .text,.article-3 .details .text,.article-4 .details .text,.article-5 .details .text,.article-6 .details .text,.article-7 .details .text,.article-8 .details .text,.article-9 .details .text{
+    color: #161616;
+    font-weight: 600;
+    font-size:0.9rem;
+    padding-bottom:20px;
+}
+.article-section .article-1 .details .icon-section,.article-2 .details .icon-section,.article-3 .details .icon-section,.article-4 .details .icon-section,.article-5 .details .icon-section,.article-6 .details .icon-section,.article-7 .details .icon-section,.article-8 .details .icon-section,.article-9 .details .icon-section{
+    display: flex;
+    padding-bottom:15px;
+}
+.article-section .article-1 .details .btn a,.article-2 .details .btn a,.article-3 .details .btn a,.article-4 .details .btn a,.article-5 .details .btn a,.article-6 .details .btn a,.article-7 .details .btn a,.article-8 .details .btn a,.article-9 .details .btn a{
+    color: #161616;
+
+}
+.fa-clock,.fa-comment{
+
+    padding-right:10px;
+    color: rgba(22, 22, 22, 0.8);
+}
+.fa-comment{
+    padding-left:25px;
+}
+.clock-text,.comments-number{
+    color: rgba(22, 22, 22, 0.7);
+}
+
+/*..........................
+ footer style .............. */
+
+ .footer-section{
+    margin-top:50px;
+    background-color: rgba(22, 22, 22, 1);
+    padding-top:35px;
+    padding-bottom:35px;
+    
+}
+.footer-title h3{
+    color: rgba(255, 255, 255, 1);
+    font-size:2.5rem;
+    font-weight: 600;
+    padding-top:50px;
+    padding-bottom:30px;
+    text-align: center;
+}
+.divider{
+    width:900px;
+    margin:auto;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom:50px;
+}
+.footer-info-link{
+    display:flex;
+    justify-content:space-around;
+    padding-left:250px;
+    padding-right:250px;
+    
+}
+
+
+.footer-info-link a{
+    color:#B9B9B9;
+    font-size:0.9rem;
+}
+.social-icon{
+    display: flex;
+    justify-content: center;
+    margin-top:50px;
+}
+.fa-facebook-f,.fa-github,.fa-instagram{
+    color:rgb(111, 0, 221) ;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+/* ...................match file style ......................... */
+/* ..........article section style ........... */
+.article-section-match{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-column-gap:24px;
+
+}
+.article-section-match .match-details{
+    border-radius: 10px;
+    border:1px solid gainsboro;
+    margin-bottom:20px;
+}
+.article-section-match .match-details .flex-section{
+    display: flex;
+    justify-content: space-between;
+    padding-top:40px;
+    padding-bottom:15px;
+    padding-left:11px;
+    padding-right:11px;
+}
+.flex-section .vs{
+    font-weight: 700;
+    font-size: 1rem;
+    padding-top:17px;
+    padding-left:10px;
+    padding-right:10px;
+}
+.article-section-match .match-details .flex-section img{
+    width:82px;
+    height:54px;
+    border-radius:0px;
+}
+.article-section-match .match-details .scheduale{
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:30px;
+}
+.article-section-match .match-details .scheduale .team-name{
+    color:#161616;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.article-section-match .match-details .scheduale .time{
+    color: #4D4D4D;
+    font-size:0.9rem;
+}
+/* button section style ........ */
+
+.button-section .btn .button-upcoming,.all-group,.button-blog{
+    margin-top:30px;
+    width: 252px;
+    height: 64px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+
+}
+.button-blog{
+    margin-bottom:30px;
+}
+.button-section .btn .button-upcoming{
+    background-color:rgb(111, 0, 221) ;
+
+}
+.button-section .btn .button-upcoming a{
+    color:#FFFFFF;
+
+}
+
+
+/* responsive style ..................
+..................... */
+
+/* ...........For tablet ......... */
+@media screen and (max-width:992px) and (min-width:768px){
+    
+    .content-details{
+        flex-direction:column;
+    }
+    .button-section{
+        justify-content: space-between;
+        margin-bottom:30px;
+        height:100%;
+        width:100%;
+        flex-direction: row;
+        padding-left:0px;
+        padding-right:0px;
+        padding-bottom:20px;
+        background-color:transparent;
+        
+    }
+    .button-section .btn .upcoming-match,.all-group,.blog{
+        margin-top:30px;
+        width: 330px;
+        height: 70px;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 10px;
+    
+    }
+    .button-section .btn.btn-color{
+        margin-top:30px;
+    }
+    /* match file responsive start  */
+    .button-section .btn .button-upcoming,.button-blog,.all-group{
+        width: 330px;
+        height: 70px;
+
+    }
+    .btn .button-blog{
+        margin-top:60px;
+
+    }
+    /* match file responsive end  */
+    .article-section,.article-section-match{
+    
+        grid-template-columns:repeat(2,1fr);
+        grid-row-gap:24px ;
+        
+    }
+    .article-section .article-1 .image img,.article-2 .image img,.article-3 .image img,.article-4 .image img,.article-5 .image img,.article-6 .image img,.article-7 .image img,.article-8 .image img,.article-9 .image img{
+        width:520px;
+        height:220px;
+    }
+    .article-section .article-9{
+        display:none;
+    }
+    .main-content .button-section-view .btn-view{
+        display: block;
+        
+    }
+    .article-section-match{
+        margin-bottom:110px;
+    }
+     
+}
+/* For Mobile ................... */
+@media screen and (max-width:767px){
+    .header-content{
+        grid-template-columns:repeat(1,1fr);
+    }
+    .header-details,.header-img{
+        text-align:center;
+    }
+    .content-details{
+        flex-direction:column;
+    }
+    .button-section{
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom:30px;
+        height:100%;
+        width:100%;
+        padding-left:0px;
+        padding-right:0px;
+        padding-bottom:20px;
+        background-color:transparent;
+        
+    }
+    .button-section .btn .all-group,.blog,.button-blog{
+       
+        width: 220px;
+        
+    
+    }
+    .article-section,.article-section-match{
+    
+        grid-template-columns:repeat(1,1fr);
+        grid-row-gap:24px ;
+        
+    }
+    
+    .header-section,.article-section-match{
+        padding-left:80px;
+        padding-right:80px;
+    }
+    .article-section .article-1 .image img,.article-2 .image img,.article-3 .image img,.article-4 .image img,.article-5 .image img,.article-6 .image img,.article-7 .image img,.article-8 .image img,.article-9 .image img{
+        width:100%;
+        height:380px;
+    }
+    .article-section-match{
+        margin-top:100px;
+        margin-bottom:330px;
+    }
+    .footer-info-link{
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .footer-info-link p{
+        padding-top:20px;
+    }
+    .social-icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .social-icon a{
+        padding-top:10px;
+    }
+
+}
+
